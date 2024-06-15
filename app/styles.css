@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes circular-path {
+  0% {
+    transform: rotate(0deg) translate(5px) rotate(-0deg);
+  }
+  25% {
+    transform: rotate(90deg) translate(5px) rotate(-90deg);
+  }
+  50% {
+    transform: rotate(180deg) translate(5px) rotate(-180deg);
+  }
+  75% {
+    transform: rotate(270deg) translate(5px) rotate(-270deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(5px) rotate(-360deg);
+  }
+}
+
+.animate-circular-path {
+  animation-name: circular-path;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Animation 2 */
+@keyframes circular-path-2 {
+  0% {
+    transform: rotate(45deg) translate(5px) rotate(-45deg);
+  }
+  25% {
+    transform: rotate(135deg) translate(5px) rotate(-135deg);
+  }
+  50% {
+    transform: rotate(225deg) translate(5px) rotate(-225deg);
+  }
+  75% {
+    transform: rotate(315deg) translate(5px) rotate(-315deg);
+  }
+  100% {
+    transform: rotate(405deg) translate(5px) rotate(-405deg);
+  }
+}
+
+.animate-circular-path-2 {
+  animation-name: circular-path-2;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Animation 3 */
+@keyframes circular-path-3 {
+  0% {
+    transform: rotate(90deg) translate(5px) rotate(-90deg);
+  }
+  25% {
+    transform: rotate(180deg) translate(5px) rotate(-180deg);
+  }
+  50% {
+    transform: rotate(270deg) translate(5px) rotate(-270deg);
+  }
+  75% {
+    transform: rotate(360deg) translate(5px) rotate(-360deg);
+  }
+  100% {
+    transform: rotate(450deg) translate(5px) rotate(-450deg);
+  }
+}
+
+.animate-circular-path-3 {
+  animation-name: circular-path-3;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Animation 4 */
+@keyframes circular-path-4 {
+  0% {
+    transform: rotate(135deg) translate(5px) rotate(-135deg);
+  }
+  25% {
+    transform: rotate(225deg) translate(5px) rotate(-225deg);
+  }
+  50% {
+    transform: rotate(315deg) translate(5px) rotate(-315deg);
+  }
+  75% {
+    transform: rotate(405deg) translate(5px) rotate(-405deg);
+  }
+  100% {
+    transform: rotate(495deg) translate(5px) rotate(-495deg);
+  }
+}
+
+.animate-circular-path-4 {
+  animation-name: circular-path-4;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.icon-grid {
+  width: 500px;
+  height: 150px;
+}
