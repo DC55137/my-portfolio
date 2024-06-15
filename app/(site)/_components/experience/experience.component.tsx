@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./lilcon.component";
 import { experience } from "@/data/experience";
+import Link from "next/link";
 
 export const ExperiencePage: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -64,31 +65,32 @@ const Details: React.FC<DetailsProps> = ({
       ref={ref}
       className="mx-auto flex flex-col justify-between w-[90%] md:flex-row"
     >
-      <LiIcon reference={ref} />
-      <motion.div
-        initial={{ y: 50 }}
-        whileInView={{ y: 0 }}
-        transition={{ duration: 0.5, type: "spring" }}
-        viewport={{ once: true, amount: 0.5 }}
-        className="flex flex-col md:flex-row items-center md:items-start"
+      <Link
+        href={companyLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex gap-5 lg:group-hover/list:opacity-50 lg:hover:!opacity-100 lg:transition-opacity"
       >
-        <div>
-          <h3 className="text-lg font-bold capitalize sm:text-xl">
-            {position}&nbsp;
-            <a
-              href={companyLink}
-              target="_blank"
-              className="capitalize text-main-300"
-            >
-              @{company}
-            </a>
-          </h3>
-          <span className="font-medium capitalize text-dark/75 xs:text-sm">
-            {time} | {address}
-          </span>
-          <p className="w-full font-medium md:text-sm mt-2">{work}</p>
-        </div>
-      </motion.div>
+        <LiIcon reference={ref} />
+        <motion.div
+          initial={{ y: 50 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.5, type: "spring" }}
+          viewport={{ once: true, amount: 0.5 }}
+          className="flex flex-col md:flex-row items-center md:items-start"
+        >
+          <div>
+            <h3 className="text-lg font-bold capitalize sm:text-xl">
+              {position}&nbsp;
+              <p className="capitalize text-dimmed">@{company}</p>
+            </h3>
+            <span className="font-medium capitalize text-dark/75 xs:text-sm">
+              {time} | {address}
+            </span>
+            <p className="w-full font-medium md:text-sm mt-2">{work}</p>
+          </div>
+        </motion.div>
+      </Link>
     </li>
   );
 };

@@ -14,12 +14,14 @@ import { stack } from "@/data/stack";
 import { ContactForm } from "./_components/contact-form";
 import { ExperiencePage } from "./_components/experience";
 import { SiteAside } from "./_components/site-aside";
+import { Glass } from "../_components/glass";
 
 export default function SiteHome() {
   return (
     <>
       <Main className="gap-9 sm:gap-10">
         <Hero />
+        <Glass />
         {/* <Hero isBig {...about.hero} /> */}
         <div className="relative z-20 flex flex-col flex-auto lg:flex-row-reverse">
           <div className="max-w-[800px] mx-auto gap-20 mt-20 flex flex-col">
