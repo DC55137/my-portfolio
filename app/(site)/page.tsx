@@ -81,9 +81,9 @@ export default function SiteHome() {
                         href={item.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 transition-colors typography-2 text-dimmed hover:text-accent"
+                        className="flex items-center gap-2 transition-colors typography-2 text-dimmed hover:text-main-300"
                       >
-                        <IconCheck className="w-4 h-4 text-accent" />{" "}
+                        <IconCheck className="w-4 h-4 text-main-300" />{" "}
                         {item.title}
                       </a>
                     ))}
