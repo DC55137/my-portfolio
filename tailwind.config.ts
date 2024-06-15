@@ -3,7 +3,6 @@ import * as radix from "@radix-ui/colors";
 import plugin from "tailwindcss/plugin";
 
 const spacing = {
-  0: rem(0),
   1: rem(4),
   2: rem(8),
   3: rem(12),
@@ -36,15 +35,15 @@ const config = {
     extend: {
       colors: {
         main: {
-          100: "#f3f4f6",
-          200: "#e5e7eb",
-          300: "#d1d5db",
-          400: "#9ca3af",
-          500: "#6b7280",
-          600: "#4b5563",
-          700: "#374151",
-          800: "#1f2937",
-          900: "#111827",
+          100: "#E4F9FE",
+          200: "#CCF8FF",
+          300: "#79EEFD",
+          400: "#499099",
+          500: "#1F5875",
+          600: "#0D4866",
+          700: "#093145",
+          800: "#06202E",
+          900: "#040408",
         },
         ...fromRadix(radix.slateDark, "base"),
         ...fromRadix(radix.mintDark, "accent"),
@@ -52,9 +51,6 @@ const config = {
         ...fromRadix(radix.greenDarkA, "success-a"),
         ...fromRadix(radix.redDark, "error"),
       },
-      spacing,
-      minWidth: spacing,
-      minHeight: spacing,
       fontSize: {
         1: rem(12),
         2: rem(14),
@@ -110,17 +106,15 @@ const config = {
     plugin(function typographyStyles({ matchUtilities, theme }) {
       matchUtilities(
         {
-          typography: (value) => {
-            return {
-              fontSize: theme(`fontSize.${value}`),
-              lineHeight: theme(`lineHeight.${value}`),
-              letterSpacing: theme(`letterSpacing.${value}`),
-            };
-          },
+          typography: (value) => ({
+            fontSize: theme(`fontSize.${value}`),
+            lineHeight: theme(`lineHeight.${value}`),
+            letterSpacing: theme(`letterSpacing.${value}`),
+          }),
         },
         {
           values: Object.keys(theme("fontSize")).reduce(
-            (acc, i) => ({ ...acc, [i]: i }),
+            (acc, key) => ({ ...acc, [key]: key }),
             {}
           ),
         }
@@ -128,7 +122,7 @@ const config = {
     }),
     plugin(function textColors({ addUtilities, theme }) {
       addUtilities({
-        ".text-base": { color: theme("colors.base-12") },
+        ".text-default": { color: theme("colors.base-12") },
         ".text-dimmed": { color: theme("colors.base-11") },
         ".text-extradimmed": { color: theme("colors.base-8") },
         ".text-contrast": { color: "black" },
@@ -136,11 +130,6 @@ const config = {
       });
     }),
   ],
-  variants: {
-    extend: {
-      typography: ["responsive"],
-    },
-  },
 } satisfies Config;
 
 export default config;

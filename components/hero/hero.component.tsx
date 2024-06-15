@@ -39,7 +39,6 @@ export function Hero({
           className={cn(isBig ? "typography-9" : "typography-8", "font-bold")}
         >
           <MDX
-            className="text-base"
             source={title}
             components={{
               p: ({ children }) => children,

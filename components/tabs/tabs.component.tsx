@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import type { TabsProps as TabsRootProps } from "@radix-ui/react-tabs"
-import type { ReactNode } from "react"
+import type { TabsProps as TabsRootProps } from "@radix-ui/react-tabs";
+import type { ReactNode } from "react";
 
-import * as TabsPrimitive from "@radix-ui/react-tabs"
+import * as TabsPrimitive from "@radix-ui/react-tabs";
 
 export type TabsProps = Omit<TabsRootProps, "content"> & {
-  content: Record<string, ReactNode>
-}
+  content: Record<string, ReactNode>;
+};
 
 export function Tabs({ className, content, ...props }: TabsProps) {
   return (
@@ -17,7 +17,7 @@ export function Tabs({ className, content, ...props }: TabsProps) {
           <TabsPrimitive.Trigger
             key={value}
             value={value}
-            className="rounded hover:bg-base-4 data-[state=active]:bg-base-5 px-4 py-2 typography-2 font-medium text-dimmed data-[state=active]:text-base"
+            className="rounded hover:bg-base-4 data-[state=active]:bg-base-5 px-4 py-2 typography-2 font-medium text-dimmed data-[state=active]:text-default"
           >
             {value}
           </TabsPrimitive.Trigger>
@@ -29,5 +29,5 @@ export function Tabs({ className, content, ...props }: TabsProps) {
         </TabsPrimitive.Content>
       ))}
     </TabsPrimitive.Root>
-  )
+  );
 }
