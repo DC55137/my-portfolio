@@ -34,7 +34,7 @@ export function SiteAside() {
     <Paper
       asChild
       shape="rounded"
-      className="[grid-area:aside] border-x-0 border-b-0 flex flex-col items-center gap-7 px-5 py-7 text-center"
+      className="[grid-area:aside] lg:sticky lg:top-0 lg:w-[320px] lg:h-[100dvh] lg:flex-shrink-0 border-x-0 border-b-0 lg:border-t-0 lg:border-r flex flex-col items-center gap-7 px-5 py-7 text-center"
     >
       <aside>
         <Image
@@ -60,7 +60,7 @@ export function SiteAside() {
                 aria-label={`view ${link.label} profile`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-1 text-extradimmed hover:text-default"
+                className="p-1 text-extradimmed hover:text-main-300"
               >
                 <link.icon strokeWidth={1} />
               </a>

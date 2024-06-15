@@ -25,7 +25,7 @@ export function Hero() {
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     e.preventDefault();
-    const targetElement = document.getElementById("projects");
+    const targetElement = document.getElementById("about");
     if (targetElement) {
       window.scrollTo({
         top: targetElement.offsetTop,
@@ -90,18 +90,19 @@ export function Hero() {
           <div className="lg:text-8xl text-4xl">
             <h1 className="font-bold text-white lg:py-4">Hello! I&apos;m</h1>
             <h1 className="lg:py-4">
-              <strong className="text-main-500">Daniel Correa</strong>
+              <strong className="text-main-300">Daniel Correa</strong>
             </h1>
             <h2 className="lg:text-4xl text-lg py-4">
               Welcome to my{" "}
-              <strong className="text-main-500">digital realm</strong>
+              <strong className="text-main-300">digital realm</strong>
             </h2>
             <Button
               variant={"secondary"}
+              size={"lg"}
               onClick={handleScrollToProjects}
               className="py-2"
             >
-              My Projects
+              Explore my work
             </Button>
           </div>
         </motion.div>

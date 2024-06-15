@@ -24,7 +24,7 @@ export function MDX({ className, components, ...props }: MDXProps) {
         components={{
           h1: ({ children, ...props }) => (
             <h1
-              className="mt-8 text-default font-semibold typography-8"
+              className="mt-16 text-default font-semibold typography-8"
               {...props}
             >
               {children}
@@ -32,7 +32,7 @@ export function MDX({ className, components, ...props }: MDXProps) {
           ),
           h2: ({ children, ...props }) => (
             <h2
-              className="text-default font-semibold mt-7 typography-7"
+              className="text-main-300 font-semibold mt-14 typography-7"
               {...props}
             >
               {children}
@@ -40,7 +40,7 @@ export function MDX({ className, components, ...props }: MDXProps) {
           ),
           h3: ({ children, ...props }) => (
             <h3
-              className="mt-6 text-default font-semibold typography-6"
+              className="mt-12 text-default font-semibold typography-6"
               {...props}
             >
               {children}
@@ -48,7 +48,7 @@ export function MDX({ className, components, ...props }: MDXProps) {
           ),
           h4: ({ children, ...props }) => (
             <h4
-              className="mt-5 text-default font-semibold typography-5"
+              className="mt-10 text-default font-semibold typography-5"
               {...props}
             >
               {children}
@@ -56,7 +56,7 @@ export function MDX({ className, components, ...props }: MDXProps) {
           ),
           h5: ({ children, ...props }) => (
             <h5
-              className="mt-5 text-default font-semibold typography-4"
+              className="mt-10 text-default font-semibold typography-4"
               {...props}
             >
               {children}
@@ -64,7 +64,7 @@ export function MDX({ className, components, ...props }: MDXProps) {
           ),
           h6: ({ children, ...props }) => (
             <h6
-              className="mt-5 text-default font-semibold typography-3"
+              className="mt-10 text-default font-semibold typography-3"
               {...props}
             >
               {children}
@@ -108,7 +108,7 @@ export function MDX({ className, components, ...props }: MDXProps) {
           },
           ul: ({ children, ...props }) => (
             <ul
-              className="mt-5 flex flex-col gap-1 pl-[1em] list-disc"
+              className="mt-10 flex flex-col gap-1 pl-[1em] list-disc"
               {...props}
             >
               {children}
@@ -123,7 +123,7 @@ export function MDX({ className, components, ...props }: MDXProps) {
             return (
               <Code
                 theme={theme as ComponentProps<typeof Code>["theme"]}
-                className="!m-0 !mt-5 border border-base-6"
+                className="!m-0 !mt-10 border border-base-6"
                 codeClassName="max-h-[420px] typography-2"
               >
                 <code className={className}>{children}</code>
