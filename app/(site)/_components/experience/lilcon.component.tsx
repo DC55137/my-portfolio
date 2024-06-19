@@ -14,7 +14,7 @@ const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
   });
 
   return (
-    <figure className="absolute -left-5 stroke-main-400">
+    <figure className="absolute -left-[18px] stroke-main-11">
       <svg
         className="-rotate-90 w-[60px] h-[60px]"
         width="75"
@@ -25,7 +25,7 @@ const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
           cx="75"
           cy="50"
           r="20"
-          className="stroke-1 stroke-main-400 fill-none"
+          className="stroke-1 stroke-main-4 fill-none"
         />
         <motion.circle
           cx="75"
@@ -40,7 +40,7 @@ const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
           cx="75"
           cy="50"
           r="10"
-          className="stroke-1 animate-pulse fill-main-100"
+          className="stroke-1 animate-pulse fill-main-12"
         />
       </svg>
     </figure>

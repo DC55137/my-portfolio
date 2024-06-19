@@ -53,7 +53,7 @@ export function SiteNav() {
       isCentered
       header={
         <SiteHomeLink href="/#" aria-label="Go to homepage">
-          <Logo className="w-6 fill-main-200" />
+          <Logo className="w-8 fill-main-9" />
         </SiteHomeLink>
       }
     >
@@ -69,8 +69,8 @@ export function SiteNav() {
               }
               aria-label={item.label}
               className={cn(
-                "sm:w-7 sm:h-7 rounded sm:hover:bg-base-4 flex items-center sm:justify-center gap-3 sm:text-dimmed sm:hover:text-default transition-colors",
-                "sm:aria-[current=page]:bg-main-300 sm:aria-[current=page]:text-contrast"
+                "sm:w-10 sm:h-10 rounded sm:hover:bg-main-4 flex items-center sm:justify-center gap-3 sm:text-dimmed sm:hover:text-main-9 transition-colors",
+                "sm:aria-[current=page]:bg-main-5 sm:aria-[current=page]:text-main-9"
               )}
               onClick={() => setIsExpanded(false)}
             >

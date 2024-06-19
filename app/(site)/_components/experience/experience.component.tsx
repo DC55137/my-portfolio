@@ -20,7 +20,7 @@ export const ExperiencePage: React.FC = () => {
         <div ref={ref} className="relative w-full">
           <motion.div
             style={{ scaleY: scrollYProgress }}
-            className="absolute top-0 w-[3px] h-full bg-main-500 origin-top  left-[10px]"
+            className="absolute top-0 w-[3px] h-full bg-main-8 origin-top left-[10px]"
           />
           <ul className="flex flex-col items-start justify-between gap-10 w-full isolate z-30">
             {experience.items.map((item) => (
@@ -87,7 +87,9 @@ const Details: React.FC<DetailsProps> = ({
             <span className="font-medium capitalize text-dark/75 xs:text-sm">
               {time} | {address}
             </span>
-            <p className="w-full font-medium md:text-sm mt-2">{work}</p>
+            <p className="w-full font-medium text-dimmed md:text-sm mt-2">
+              {work}
+            </p>
           </div>
         </motion.div>
       </Link>

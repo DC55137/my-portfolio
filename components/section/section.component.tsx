@@ -29,9 +29,7 @@ export function Section({
       {title || subtitle ? (
         <div className="flex flex-col gap-2">
           {title ? (
-            <h2 className="typography-7 font-semibold text-main-300 ">
-              {title}
-            </h2>
+            <h2 className="typography-7 font-semibold text-main-9 ">{title}</h2>
           ) : null}
           {subtitle ? (
             <p className="typography-4 text-dimmed">{subtitle}</p>

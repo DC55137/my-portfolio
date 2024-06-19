@@ -13,7 +13,6 @@ import { stack } from "@/data/stack";
 
 import { ContactForm } from "./_components/contact-form";
 import { ExperiencePage } from "./_components/experience";
-import { SiteAside } from "./_components/site-aside";
 import { Glass } from "../_components/glass";
 
 export default function SiteHome() {
@@ -22,9 +21,8 @@ export default function SiteHome() {
       <Main className="gap-9 sm:gap-10">
         <Hero />
         <Glass />
-        {/* <Hero isBig {...about.hero} /> */}
-        <div className="relative z-20 flex flex-col flex-auto lg:flex-row-reverse">
-          <div className="max-w-[800px] mx-auto gap-20 mt-20 flex flex-col">
+        <div className="relative z-10 flex flex-col flex-auto -mt-[80vh] p-2">
+          <div className="max-w-[800px] mx-auto gap-20 my-20 flex flex-col">
             <Section
               id={about.id}
               title={about.title}
@@ -39,33 +37,6 @@ export default function SiteHome() {
               contentClassName="gap-0 group/list"
             >
               <ExperiencePage />
-              {/* {experience.items.map((item, i) => (
-              <a
-                key={item.id}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex gap-5 lg:group-hover/list:opacity-50 lg:hover:!opacity-100 lg:transition-opacity"
-              >
-                <div className="relative">
-                  <div className="w-4 h-4 rounded-full bg-accent-8 group-hover:bg-accent-9 lg:transition-colors" />
-                  {i < experience.items.length - 1 ? (
-                    <div className="absolute top-4 bottom-0 left-1/2 w-[1px] bg-base-6" />
-                  ) : null}
-                </div>
-                <div className="flex flex-col gap-4 pb-8">
-                  <div className="flex flex-col gap-1">
-                    <span className="h-4 flex items-center uppercase text-2 leading-[1] tracking-2 font-medium text-dimmed">
-                      {item.startDate} - {item.endDate}
-                    </span>
-                    <h3 className="font-medium transition-colors typography-3 group-hover:text-accent">
-                      {item.position} @ {item.company}
-                    </h3>
-                  </div>
-                  <MDX className="typography-2" source={item.description} />
-                </div>
-              </a>
-            ))} */}
             </Section>
             <Section
               id={stack.id}
@@ -83,9 +54,9 @@ export default function SiteHome() {
                         href={item.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 transition-colors typography-2 text-dimmed hover:text-main-300"
+                        className="flex items-center gap-2 transition-colors typography-2 text-dimmed hover:text-main-9 group"
                       >
-                        <IconCheck className="w-4 h-4 text-main-300" />{" "}
+                        <IconCheck className="size-4 text-main-10 group-hover:text-main-9 group-hover:size-5" />{" "}
                         {item.title}
                       </a>
                     ))}
@@ -109,7 +80,7 @@ export default function SiteHome() {
                       >
                         <Paper className="absolute opacity-0 -z-10 -inset-5 lg:group-hover:opacity-100 lg:transition-opacity" />
                         {item.imgSrc && item.imgAlt ? (
-                          <div className="relative flex-shrink-0 overflow-hidden transition-colors border-2 rounded border-base-6 group-hover:border-accent-8">
+                          <div className="relative flex-shrink-0 overflow-hidden transition-colors border-2 rounded border-base-6 group-hover:border-main-8">
                             <Image
                               src={item.imgSrc}
                               alt={item.imgAlt}
@@ -124,7 +95,7 @@ export default function SiteHome() {
                             href={item.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="font-medium transition-colors typography-3 hover:text-accent"
+                            className="font-medium transition-colors typography-3 hover:text-main-9"
                           >
                             <div className="absolute -inset-5 bg-[red]/01" />
                             <h4>{item.title}</h4>
@@ -160,7 +131,6 @@ export default function SiteHome() {
               />
             </footer>
           </div>
-          <SiteAside />
         </div>
       </Main>
     </>

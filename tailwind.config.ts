@@ -2,19 +2,6 @@ import type { Config } from "tailwindcss";
 import * as radix from "@radix-ui/colors";
 import plugin from "tailwindcss/plugin";
 
-const spacing = {
-  1: rem(4),
-  2: rem(8),
-  3: rem(12),
-  4: rem(16),
-  5: rem(24),
-  6: rem(32),
-  7: rem(40),
-  8: rem(64),
-  9: rem(80),
-  10: rem(160),
-};
-
 const config = {
   darkMode: ["class"],
   content: [
@@ -35,17 +22,39 @@ const config = {
     extend: {
       colors: {
         main: {
-          100: "#E4F9FE",
-          200: "#CCF8FF",
-          300: "#79EEFD",
-          400: "#499099",
-          500: "#1F5875",
-          600: "#0D4866",
-          700: "#093145",
-          800: "#06202E",
-          900: "#040408",
+          1: "#051416",
+          2: "#081c1f",
+          3: "#002d33",
+          4: "#003c43",
+          5: "#004a53",
+          6: "#005a65",
+          7: "#006d79",
+          8: "#008492",
+          9: "#79eefd",
+          10: "#6ee4f3",
+          11: "#5ecedd",
+          12: "#bef4fc",
+
+          a1: "#0091e606",
+          a2: "#00ccff0f",
+          a3: "#00d2fb25",
+          a4: "#00ddfe36",
+          a5: "#00deff47",
+          a6: "#00e0ff5a",
+          a7: "#00e2fd70",
+          a8: "#00e4fe8b",
+          a9: "#7af0fffd",
+          a10: "#72eefef3",
+          a11: "#6beeffdb",
+          a12: "#c0f7fffc",
+
+          contrast: "#03272b",
+          surface: "#00272d80",
+          indicator: "#79eefd",
+          track: "#79eefd",
         },
-        ...fromRadix(radix.slateDark, "base"),
+
+        ...fromRadix(radix.sageDark, "base"),
         ...fromRadix(radix.mintDark, "accent"),
         ...fromRadix(radix.greenDark, "success"),
         ...fromRadix(radix.greenDarkA, "success-a"),
@@ -122,7 +131,7 @@ const config = {
     }),
     plugin(function textColors({ addUtilities, theme }) {
       addUtilities({
-        ".text-default": { color: theme("colors.base-12") },
+        ".text-default": { color: theme("colors.main.12") },
         ".text-dimmed": { color: theme("colors.base-11") },
         ".text-extradimmed": { color: theme("colors.base-8") },
         ".text-contrast": { color: "black" },

@@ -34,9 +34,9 @@ export function SiteAside() {
     <Paper
       asChild
       shape="rounded"
-      className="[grid-area:aside] lg:sticky lg:top-0 lg:w-[320px] lg:h-[100dvh] lg:flex-shrink-0 border-x-0 border-b-0 lg:border-t-0 lg:border-r flex flex-col items-center gap-7 px-5 py-7 text-center"
+      className="[grid-area:aside]  border-x-0 border-b-0 lg:border-t-0 flex flex-col items-center gap-7 px-5 py-7 text-center"
     >
-      <aside>
+      <aside className=" flex flex-col items-center gap-3">
         <Image
           src={about.avatar}
           width={150}
@@ -60,16 +60,17 @@ export function SiteAside() {
                 aria-label={`view ${link.label} profile`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-1 text-extradimmed hover:text-main-300"
+                className="p-1 text-base-9 hover:text-main-12"
               >
                 <link.icon strokeWidth={1} />
               </a>
             </Tooltip>
           ))}
         </div>
-        <p className="typography-2 text-dimmed">{about.description}</p>
+
+        <p className="typography-2 text-dimmed max-w-lg">{about.description}</p>
         <div className="flex-auto" />
-        <div className="flex flex-col self-stretch gap-4">
+        <div className="flex self-stretch gap-4  mx-auto">
           <Button asChild variant="secondary">
             <a download="Daniel-Correa-resume.pdf" href="/resume.pdf">
               <IconDownload strokeWidth={1.5} className="h-[16px]" />
