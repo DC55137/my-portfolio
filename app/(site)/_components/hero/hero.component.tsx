@@ -94,40 +94,41 @@ export function Hero() {
             priority
           />
         </motion.div>
-
-        <motion.div
-          style={{ opacity: opacityText }}
-          className="absolute w-full top-8 text-center px-4"
-        >
-          <div className="2xl:text-8xl lg:text-7xl text-6xl flex flex-col gap-6">
-            <h1 className="text-white">Hello! I&apos;m</h1>
-            <h1 className="text-main-11">
-              <strong>Daniel Correa</strong>
-            </h1>
-            <h2 className="lg:text-2xl text-white font-normal text-2xl">
-              Welcome to my{" "}
-              <strong className="text-main-11">digital realm.</strong>
-            </h2>
-          </div>
-          <div className="flex sm:text-lg px-14 text-sm flex-row gap-2 justify-center mt-4">
-            <Button
-              className=" mx-auto sm:mx-0 w-full sm:w-60"
-              onClick={handleScrollToProjects}
-            >
-              Dive in
-            </Button>
-            <Button
-              className=" mx-auto sm:mx-0 w-full sm:w-60"
-              variant={"secondary"}
-              asChild
-            >
-              <a download="Daniel-Correa-resume.pdf" href="/resume.pdf">
-                <IconDownload strokeWidth={1.5} className="h-[16px]" />
-                Résumé
-              </a>
-            </Button>
-          </div>
-        </motion.div>
+        <div className="container">
+          <motion.div
+            style={{ opacity: opacityText }}
+            className="relative w-full top-8 text-left px-20"
+          >
+            <div className="2xl:text-8xl lg:text-7xl text-6xl flex flex-col gap-6">
+              <h1 className="text-white">Hello! I&apos;m</h1>
+              <h1 className="text-main-11">
+                <strong>Daniel Correa</strong>
+              </h1>
+              <h2 className="lg:text-2xl text-white font-normal text-2xl">
+                Welcome to my{" "}
+                <strong className="text-main-11">digital realm.</strong>
+              </h2>
+            </div>
+            <div className="my-4">
+              <Button
+                className="w-full sm:w-60 mx-2"
+                onClick={handleScrollToProjects}
+              >
+                Dive in
+              </Button>
+              <Button
+                className="w-full sm:w-60 mx-2"
+                variant={"secondary"}
+                asChild
+              >
+                <a download="Daniel-Correa-resume.pdf" href="/resume.pdf">
+                  <IconDownload strokeWidth={1.5} className="h-[16px]" />
+                  Résumé
+                </a>
+              </Button>
+            </div>
+          </motion.div>
+        </div>
       </motion.div>
     </section>
   );

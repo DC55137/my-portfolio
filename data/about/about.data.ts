@@ -32,7 +32,7 @@ export const about: About = {
   id: "about",
   icon: IconUser,
   label: "About",
-  title: "My Coding Journey",
+  title: "About Me",
   subtitle: "Crafting Software Solutions: A Lifelong Pursuit.",
   content: `
 My passion for front-end engineering is deeply rooted in my love for **communication**. Through my experiences as an English teacher, I've learned to convey complex ideas with minimal language, a skill that translates seamlessly into creating intuitive user experiences. I believe in the power of **engineering** to solve real-world problems using logic and creativity. <br /><br />
