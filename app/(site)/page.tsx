@@ -14,6 +14,7 @@ import { stack } from "@/data/stack";
 import { ContactForm } from "./_components/contact-form";
 import { ExperiencePage } from "./_components/experience";
 import { Glass } from "../_components/glass";
+import { Parallax } from "./_components/Parallax";
 
 export default function SiteHome() {
   return (
@@ -22,14 +23,16 @@ export default function SiteHome() {
         <Hero />
         <Glass />
         <div className="relative z-10 flex flex-col flex-auto -mt-[80vh] p-2">
-          <div className="max-w-[800px] mx-auto gap-20 my-20 flex flex-col">
+          <div className="max-w-[800px] mx-auto gap-20 my-20 flex flex-col overflow-visible">
             <Section
               id={about.id}
               title={about.title}
               subtitle={about.subtitle}
             >
               <MDX source={about.content} />
+              <Parallax />
             </Section>
+
             <Section
               id={experience.id}
               title={experience.title}
