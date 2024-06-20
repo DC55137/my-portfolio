@@ -98,7 +98,7 @@ export function Hero() {
           style={{ opacity: opacityText }}
           className="absolute w-full top-8 text-center px-4"
         >
-          <div className="2xl:text-8xl lg:text-7xl sm:text-6xl text-5xl flex flex-col gap-6">
+          <div className="2xl:text-8xl lg:text-7xl text-6xl flex flex-col gap-6">
             <h1 className="text-white">Hello! I&apos;m</h1>
             <h1 className="text-main-9">
               <strong>Daniel Correa</strong>
@@ -108,7 +108,7 @@ export function Hero() {
               <strong className="text-main-9">digital realm.</strong>
             </h2>
           </div>
-          <div className="flex flex-col sm:text-lg px-14 text-sm sm:flex-row gap-2 justify-center mt-4">
+          <div className="flex sm:text-lg px-14 text-sm flex-row gap-2 justify-center mt-4">
             <Button
               className=" mx-auto sm:mx-0 w-full sm:w-60"
               onClick={handleScrollToProjects}

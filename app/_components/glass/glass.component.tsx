@@ -22,15 +22,6 @@ export function Glass() {
 
   return (
     <div className="fixed inset-0 z-0 flex pointer-events-none">
-      <div className="absolute w-full h-full">
-        {/* <Image
-          src="/backgroundBottom.png"
-          alt="Background Image"
-          fill={true}
-          className="object-cover object-bottom opacity-40"
-          priority
-        /> */}
-      </div>
       <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 rounded-full w-[250px] sm:w-[500px] aspect-square bg-main-2" />
       <div className="absolute bottom-0 translate-y-1/2 left-0 -translate-x-1/2 rounded-full w-[250px] sm:w-[500px] aspect-square bg-main-2" />
       <div className="absolute bottom-0 translate-y-1/2 right-0 translate-x-1/2 rounded-full w-[250px] sm:w-[500px] aspect-square bg-main-2" />
