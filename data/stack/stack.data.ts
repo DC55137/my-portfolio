@@ -33,6 +33,7 @@ export const stack: Stack = {
         { id: "sass", title: "SASS", url: "https://sass-lang.com" },
         { id: "python", title: "Python", url: "https://www.python.org" },
         { id: "ruby", title: "Ruby", url: "https://www.ruby-lang.org/en" },
+        { id: "node", title: "Node Js", url: "https://nodejs.org/en" },
       ],
     },
     {
