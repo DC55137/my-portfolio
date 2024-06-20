@@ -17,9 +17,10 @@ export function Hero() {
 
   const scaleBackground = useTransform(scrollYProgress, [0, 1], [1, 3]);
   const scaleForeground = useTransform(scrollYProgress, [0, 1], [1, 10]);
+  const scaleDesk = useTransform(scrollYProgress, [0, 0.5], [1, 20]);
   const opacityText = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
   const opacityIcons = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-  const opacityDesk = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const opacityDesk = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
 
   const opacityMainSection = useTransform(scrollYProgress, [0.5, 1], [1, 0]);
 
@@ -69,7 +70,7 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          style={{ scale: scaleForeground, opacity: opacityDesk }}
+          style={{ scale: scaleDesk, opacity: opacityDesk }}
           className="absolute w-full h-full"
         >
           <Image
