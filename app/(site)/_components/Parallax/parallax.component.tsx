@@ -39,18 +39,18 @@ export function Parallax() {
       src: "/experience/graduation.jpg",
       y: mdUp,
       className:
-        "h-[30vw] w-[20vw] md:h-[30vh] md:w-[20vh] 2xl:h-[20vh] 2xl:w-[10vh] z-40 top-1/2 md:bottom-0 left-1/2",
+        "h-[35vw] w-[25vw] md:h-[34vh] md:w-[24vh] 2xl:h-[23vh] 2xl:w-[13vh] z-40 top-1/2 md:bottom-0 left-1/2",
     },
     {
       src: "/experience/BJJ.png",
-      y: mdUp,
+      y: finishBottom,
       className:
         "h-[40vw] w-[30vw] md:h-[40vh] md:w-[30vh] 2xl:h-[30vh] 2xl:w-[20vh] z-50 bottom-0 right-20",
     },
   ];
 
   return (
-    <div ref={container} className=" min-h-[80vh] relative overflow-visible">
+    <div ref={container} className=" min-h-[70vh] relative overflow-visible">
       {images.map(({ src, y, className }, i) => (
         <motion.div
           style={{ y }}
