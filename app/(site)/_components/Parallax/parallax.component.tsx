@@ -33,11 +33,11 @@ export function Parallax() {
       src: "/experience/engineer.jpg",
       y: finishBottom,
       className:
-        "h-[45vw] w-[35vw] md:h-[45vh] md:w-[35vh] 2xl:h-[35vh] 2xl:w-[25vh]  z-30 bottom-0 left-0",
+        "h-[45vw] w-[35vw] md:h-[45vh] md:w-[35vh] 2xl:h-[35vh] 2xl:w-[25vh]  z-30 sm:bottom-0 bottom-10 left-0",
     },
     {
       src: "/experience/graduation.jpg",
-      y: mdUp,
+      y: smUp,
       className:
         "h-[35vw] w-[25vw] md:h-[34vh] md:w-[24vh] 2xl:h-[23vh] 2xl:w-[13vh] z-40 top-1/2 md:bottom-0 left-1/2",
     },
@@ -45,7 +45,7 @@ export function Parallax() {
       src: "/experience/BJJ.png",
       y: finishBottom,
       className:
-        "h-[40vw] w-[30vw] md:h-[40vh] md:w-[30vh] 2xl:h-[30vh] 2xl:w-[20vh] z-50 bottom-0 right-20",
+        "h-[40vw] w-[30vw] md:h-[40vh] md:w-[30vh] 2xl:h-[30vh] 2xl:w-[20vh] z-50 sm:bottom-0 bottom-10 right-20",
     },
   ];
 

@@ -54,6 +54,14 @@ export function Hero() {
     }
   }, [loadedImages]);
 
+  // {isLoading && (
+  //   <div className="fixed h-screen w-screen inset-0 gap-4 flex flex-col items-center justify-center bg-base-6 z-[100]">
+  //     <Logo className="w-32 h-32 fill-main-9 animate-pulse" />{" "}
+  //     <Progress value={(loadedImages / 3) * 100} className="w-80 h-2 " />{" "}
+  //     {/* Adjust the size as necessary */}
+  //   </div>
+  // )}
+
   return (
     <section
       id="home"
@@ -63,13 +71,6 @@ export function Hero() {
         scrollY > 0.8 ? "z-[0]" : "z-30"
       )}
     >
-      {isLoading && (
-        <div className="fixed h-screen w-screen inset-0 gap-4 flex flex-col items-center justify-center bg-base-6 z-[100]">
-          <Logo className="w-32 h-32 fill-main-9 animate-pulse" />{" "}
-          <Progress value={(loadedImages / 3) * 100} className="w-80 h-2 " />{" "}
-          {/* Adjust the size as necessary */}
-        </div>
-      )}
       <motion.div
         style={{ opacity: opacityMainSection }}
         className={cn(
@@ -121,7 +122,7 @@ export function Hero() {
         <div className="container">
           <motion.div
             style={{ opacity: opacityText }}
-            className="relative w-full top-8 text-left px-20"
+            className="relative w-full top-8 text-left sm:px-20"
           >
             <div className="2xl:text-8xl lg:text-7xl text-6xl flex flex-col gap-6">
               <h1 className="text-white">Hello! I&apos;m</h1>
@@ -134,17 +135,10 @@ export function Hero() {
               </h2>
             </div>
             <div className="my-4">
-              <Button
-                className="w-full sm:w-32 mx-2"
-                onClick={handleScrollToProjects}
-              >
+              <Button className="w-32 mx-2" onClick={handleScrollToProjects}>
                 Dive in
               </Button>
-              <Button
-                className="w-full sm:w-32 mx-2"
-                variant={"secondary"}
-                asChild
-              >
+              <Button className="w-32 mx-2" variant={"secondary"} asChild>
                 <a download="Daniel-Correa-resume.pdf" href="/resume.pdf">
                   <IconDownload strokeWidth={1.5} className="h-[16px]" />
                   Résumé
