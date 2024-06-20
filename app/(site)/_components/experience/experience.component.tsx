@@ -77,7 +77,7 @@ const Details: React.FC<DetailsProps> = ({
           whileInView={{ y: 0 }}
           transition={{ duration: 0.5, type: "spring" }}
           viewport={{ once: true, amount: 0.5 }}
-          className="flex flex-col md:flex-row items-center md:items-start"
+          className="flex flex-col pl-4 md:flex-row items-center md:items-start"
         >
           <div>
             <h3 className="text-lg font-bold capitalize sm:text-xl">

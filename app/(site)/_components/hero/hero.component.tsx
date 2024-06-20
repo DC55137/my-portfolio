@@ -100,12 +100,12 @@ export function Hero() {
         >
           <div className="2xl:text-8xl lg:text-7xl text-6xl flex flex-col gap-6">
             <h1 className="text-white">Hello! I&apos;m</h1>
-            <h1 className="text-main-9">
+            <h1 className="text-main-11">
               <strong>Daniel Correa</strong>
             </h1>
-            <h2 className="lg:text-2xl font-normal text-2xl">
+            <h2 className="lg:text-2xl text-white font-normal text-2xl">
               Welcome to my{" "}
-              <strong className="text-main-9">digital realm.</strong>
+              <strong className="text-main-11">digital realm.</strong>
             </h2>
           </div>
           <div className="flex sm:text-lg px-14 text-sm flex-row gap-2 justify-center mt-4">
@@ -122,7 +122,7 @@ export function Hero() {
             >
               <a download="Daniel-Correa-resume.pdf" href="/resume.pdf">
                 <IconDownload strokeWidth={1.5} className="h-[16px]" />
-                Download Résumé
+                Résumé
               </a>
             </Button>
           </div>

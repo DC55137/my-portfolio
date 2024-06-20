@@ -1,19 +1,20 @@
-import type { Section } from "../data.props"
+import type { Section } from "../data.props";
 
-import { IconStack2 } from "@tabler/icons-react"
+import { IconStack2 } from "@tabler/icons-react";
 
 type Stack = Section & {
   groups: {
-    id: string
-    title: string
+    id: string;
+    title: string;
     items: {
-      id: string
-      title: string
-      url: string
-    }[]
-  }[]
-}
+      id: string;
+      title: string;
+      url: string;
+    }[];
+  }[];
+};
 
+// prettier-ignore
 export const stack: Stack = {
   id: "stack",
   icon: IconStack2,
@@ -39,6 +40,8 @@ export const stack: Stack = {
       title: "Frameworks & Libraries",
       items: [
         { id: "react-js", title: "React.js", url: "https://reactjs.org" },
+        { id: "vue-js", title: "Vue.js", url: "https://vuejs.org/" },
+        { id: "angular-js", title: "Angular.js", url: "https://angularjs.org/" },
         { id: "react-native", title: "React Native", url: "https://reactnative.dev" },
         { id: "next-js", title: "Next.js", url: "https://nextjs.org" },
         { id: "remix", title: "Remix", url: "https://remix.run" },

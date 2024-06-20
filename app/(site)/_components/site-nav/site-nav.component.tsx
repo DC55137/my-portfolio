@@ -28,14 +28,18 @@ export function SiteNav() {
   useEffect(() => {
     const onScroll = () => {
       const fromTop = window.scrollY;
+      const negativeMargin = window.innerHeight * 0.8; // Convert 80vh to pixels
+
       for (const item of NAV_ITEMS) {
         const section = document.querySelector<HTMLDivElement>(item.href);
         if (section) {
-          const isActive =
-            section.offsetTop -
-              (parseFloat(getComputedStyle(section).scrollMarginTop) || 0) -
-              10 <=
-              fromTop && section.offsetTop + section.offsetHeight > fromTop;
+          const sectionTop =
+            section.offsetTop +
+            negativeMargin -
+            (parseFloat(getComputedStyle(section).scrollMarginTop) || 0);
+          const sectionBottom = sectionTop + section.offsetHeight;
+
+          const isActive = sectionTop <= fromTop && sectionBottom > fromTop;
           if (isActive) {
             setActiveHref(item.href);
             break;
