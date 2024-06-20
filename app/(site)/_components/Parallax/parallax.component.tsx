@@ -31,19 +31,19 @@ export function Parallax() {
     },
     {
       src: "/experience/engineer.jpg",
-      y: smUp,
+      y: finishBottom,
       className:
         "h-[45vw] w-[35vw] md:h-[45vh] md:w-[35vh] 2xl:h-[35vh] 2xl:w-[25vh]  z-30 bottom-0 left-0",
     },
     {
       src: "/experience/graduation.jpg",
-      y: smUp,
+      y: mdUp,
       className:
         "h-[30vw] w-[20vw] md:h-[30vh] md:w-[20vh] 2xl:h-[20vh] 2xl:w-[10vh] z-40 top-1/2 md:bottom-0 left-1/2",
     },
     {
       src: "/experience/BJJ.png",
-      y: finishBottom,
+      y: mdUp,
       className:
         "h-[40vw] w-[30vw] md:h-[40vh] md:w-[30vh] 2xl:h-[30vh] 2xl:w-[20vh] z-50 bottom-0 right-20",
     },

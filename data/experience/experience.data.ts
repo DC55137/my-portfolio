@@ -53,7 +53,7 @@ export const experience: Experience = {
       endDate: "Jun 2020",
       address: "Southport, QLD & Hiroshima, Japan",
       description:
-        "While teaching English, both in Australia and Japan, I always sought ways to amplify the learning experience for my students. Recognizing the importance of extending education beyond the classroom, I crafted a dedicated website for students. This platform, built using a Node.js application, provided them with comprehensive access to class materials, ensuring they had resources to study and reinforce their learning at home. My efforts in integrating technology into education not only fostered enhanced learning but also showcased my commitment to using technology as a tool to enrich and facilitate educational experiences.",
+        "While teaching English, both in Australia and Japan, I always sought ways to amplify the learning experience for my students. Recognising the importance of extending education beyond the classroom, I crafted a dedicated website for students. This platform, built using a Node.js application, provided them with comprehensive access to class materials, ensuring they had resources to study and reinforce their learning at home. My efforts in integrating technology into education not only fostered enhanced learning but also showcased my commitment to using technology as a tool to enrich and facilitate educational experiences.",
     },
     {
       id: "tew-solutions",
