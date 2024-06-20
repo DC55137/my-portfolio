@@ -5,9 +5,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { IconDownload } from "@tabler/icons-react";
+import { Logo } from "@/components/logo";
+import { Progress } from "@/components/ui/progress";
 
 export function Hero() {
   const ref = useRef(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadedImages, setLoadedImages] = useState(0);
   const [scrollY, setScrollY] = useState(0);
 
   const { scrollYProgress } = useScroll({
@@ -34,11 +38,21 @@ export function Hero() {
     }
   };
 
+  const handleImageLoad = () => {
+    setLoadedImages((prev) => prev + 1);
+  };
+
   useEffect(() => {
     scrollYProgress.onChange((value) => {
       setScrollY(value);
     });
   }, [scrollYProgress]);
+
+  useEffect(() => {
+    if (loadedImages === 3) {
+      setIsLoading(false);
+    }
+  }, [loadedImages]);
 
   return (
     <section
@@ -49,6 +63,13 @@ export function Hero() {
         scrollY > 0.8 ? "z-[0]" : "z-30"
       )}
     >
+      {isLoading && (
+        <div className="fixed h-screen w-screen inset-0 gap-4 flex flex-col items-center justify-center bg-base-6 z-[100]">
+          <Logo className="w-32 h-32 fill-main-9 animate-pulse" />{" "}
+          <Progress value={(loadedImages / 3) * 100} className="w-80 h-2 " />{" "}
+          {/* Adjust the size as necessary */}
+        </div>
+      )}
       <motion.div
         style={{ opacity: opacityMainSection }}
         className={cn(
@@ -66,6 +87,7 @@ export function Hero() {
             fill={true}
             className="object-cover object-bottom"
             priority
+            onLoad={handleImageLoad}
           />
         </motion.div>
 
@@ -79,6 +101,7 @@ export function Hero() {
             fill={true}
             className="object-cover object-bottom floating"
             priority
+            onLoad={handleImageLoad}
           />
         </motion.div>
 
@@ -92,6 +115,7 @@ export function Hero() {
             fill={true}
             className="object-cover object-bottom mix-blend-soft-light floatingIcons"
             priority
+            onLoad={handleImageLoad}
           />
         </motion.div>
         <div className="container">
