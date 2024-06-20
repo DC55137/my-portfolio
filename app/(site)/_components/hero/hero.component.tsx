@@ -111,13 +111,13 @@ export function Hero() {
             </div>
             <div className="my-4">
               <Button
-                className="w-full sm:w-60 mx-2"
+                className="w-full sm:w-32 mx-2"
                 onClick={handleScrollToProjects}
               >
                 Dive in
               </Button>
               <Button
-                className="w-full sm:w-60 mx-2"
+                className="w-full sm:w-32 mx-2"
                 variant={"secondary"}
                 asChild
               >
