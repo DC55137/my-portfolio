@@ -31,7 +31,7 @@ export const experience: Experience = {
       endDate: "Current",
       address: "Gold Coast, QLD",
       description:
-        "Since March 2024, I have been working as a freelancer, creating innovative projects such as Step By Step English and Yarn Petals. As a freelancer, I have utilized advanced technologies like Next.js, Prisma, and PlanetScale to develop robust and scalable applications. My work on Step By Step English involved building a top-notch online teaching platform with interactive exercises and comprehensive learning materials. For Yarn Petals, I designed a unique e-commerce platform offering extensive customization options for yarn bouquets, showcasing my ability to blend technical expertise with artistic creativity.",
+        "Since March 2024, I have been working as a freelancer, creating innovative projects such as Step By Step English and Yarn Petals. As a freelancer, I have utilized advanced technologies like Next.js, Prisma, and PlanetScale to develop robust and scalable applications. My work on Step By Step English involved building a top-notch online teaching platform with interactive exercises and comprehensive learning materials. For Yarn Petals, I designed a unique e-commerce platform offering extensive customisation options for yarn bouquets, showcasing my ability to blend technical expertise with artistic creativity.",
     },
     {
       id: "chris-board-metal-roofing",
@@ -64,7 +64,7 @@ export const experience: Experience = {
       endDate: "Jul 2015",
       address: "Gold Coast, QLD",
       description:
-        "In my role at TEW Solutions, I was at the forefront of integrating software solutions into our engineering projects. I actively contributed to programming the electrical systems, emphasizing the development of PID controls. My software-oriented approach extended to data protection, where I championed the establishment of backup protocols for critical company data on private servers. Additionally, my experience with AutoCAD solidified my capability to design and implement tech-driven solutions, reinforcing my proficiency in both software development and systems design.",
+        "In my role at TEW Solutions, I was at the forefront of integrating software solutions into our engineering projects. I actively contributed to programming the electrical systems, emphasising the development of PID controls. My software-oriented approach extended to data protection, where I championed the establishment of backup protocols for critical company data on private servers. Additionally, my experience with AutoCAD solidified my capability to design and implement tech-driven solutions, reinforcing my proficiency in both software development and systems design.",
     },
   ],
 };

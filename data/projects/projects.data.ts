@@ -1,22 +1,22 @@
-import type { Section } from "../data.props"
+import type { Section } from "../data.props";
 
-import { IconBriefcase } from "@tabler/icons-react"
+import { IconBriefcase } from "@tabler/icons-react";
 
 type Projects = Section & {
   groups: {
-    id: string
-    title: string
+    id: string;
+    title: string;
     items: {
-      id: string
-      url: string
-      source?: string
-      imgSrc?: string
-      imgAlt?: string
-      title: string
-      description: string
-    }[]
-  }[]
-}
+      id: string;
+      url: string;
+      source?: string;
+      imgSrc?: string;
+      imgAlt?: string;
+      title: string;
+      description: string;
+    }[];
+  }[];
+};
 
 export const projects: Projects = {
   id: "projects",
@@ -54,7 +54,7 @@ export const projects: Projects = {
           imgAlt: "Screenshot of the DR Racing Kart Australia website",
           title: "DR Racing Kart Australia",
           description:
-            "For DR Racing Kart Australia, I crafted an online e-commerce website, showcasing a blend of aesthetic appeal and cutting-edge functionality. Built on the robust foundation of the Next.js framework, the site is designed for optimal user experience and seamless navigation. With Redux integrated for state management, it ensures efficient data handling and responsive site behavior, catering to the dynamic needs of an e-commerce platform. The use of Prisma as the ORM guarantees efficient and organized data interactions, while the incorporation of TypeScript provides an additional layer of reliability through type safety. This project not only stands as a testament to my technical prowess but also to my understanding of the nuances of creating a user-centric online shopping experience.",
+            "For DR Racing Kart Australia, I crafted an online e-commerce website, showcasing a blend of aesthetic appeal and cutting-edge functionality. Built on the robust foundation of the Next.js framework, the site is designed for optimal user experience and seamless navigation. With Redux integrated for state management, it ensures efficient data handling and responsive site behavior, catering to the dynamic needs of an e-commerce platform. The use of Prisma as the ORM guarantees efficient and organised data interactions, while the incorporation of TypeScript provides an additional layer of reliability through type safety. This project not only stands as a testament to my technical prowess but also to my understanding of the nuances of creating a user-centric online shopping experience.",
         },
         {
           id: "CMS",
@@ -77,4 +77,4 @@ export const projects: Projects = {
       ],
     },
   ],
-}
+};
