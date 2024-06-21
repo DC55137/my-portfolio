@@ -31,7 +31,7 @@ export const experience: Experience = {
       endDate: "Current",
       address: "Gold Coast, QLD",
       description:
-        "Since March 2024, I have been working as a freelancer, creating innovative projects such as Step By Step English and Yarn Petals. As a freelancer, I have utilized advanced technologies like Next.js, Prisma, and PlanetScale to develop robust and scalable applications. My work on Step By Step English involved building a top-notch online teaching platform with interactive exercises and comprehensive learning materials. For Yarn Petals, I designed a unique e-commerce platform offering extensive customisation options for yarn bouquets, showcasing my ability to blend technical expertise with artistic creativity.",
+        "Since March 2024, I've been working as a freelancer, creating innovative projects like Step By Step English and Yarn Petals. As a freelancer, I use advanced technologies like Next.js, Prisma, and PlanetScale to develop robust and scalable applications. My work on Step By Step English involved building a top-notch online teaching platform with interactive exercises and comprehensive learning materials. For Yarn Petals, I designed a unique e-commerce platform with extensive customisation options for yarn bouquets, blending technical expertise with artistic creativity.",
     },
     {
       id: "chris-board-metal-roofing",
@@ -42,18 +42,18 @@ export const experience: Experience = {
       endDate: "Mar 2024",
       address: "Gold Coast, QLD",
       description:
-        "At Chris Board Metal Roofing, I single-handedly initiated and executed a transformation in our client management processes. I designed and built a comprehensive React application for client management, beginning with the MERN Stack and later transitioning to a Next.js framework. In addition to this major project, I personally took charge of constructing the company's website with a keen focus on SEO optimization to boost online visibility. My individual efforts also encompassed media advertisement, ensuring a strong and effective digital presence for the company.",
+        "At Chris Board Metal Roofing, I led a transformation in our client management processes. I designed and built a comprehensive React application for client management, starting with the MERN Stack and later transitioning to a Next.js framework. I also took charge of constructing the company's website, focusing on SEO optimisation to boost online visibility. My efforts included media advertisement, ensuring a strong and effective digital presence for the company.",
     },
     {
       id: "imagine-education",
       url: "https://imagineeducation.com.au",
-      position: "English as a second Language Teacher",
+      position: "English as a Second Language Teacher",
       company: "Imagine Education",
       startDate: "Jul 2015",
       endDate: "Jun 2020",
       address: "Southport, QLD & Hiroshima, Japan",
       description:
-        "While teaching English, both in Australia and Japan, I always sought ways to amplify the learning experience for my students. Recognising the importance of extending education beyond the classroom, I crafted a dedicated website for students. This platform, built using a Node.js application, provided them with comprehensive access to class materials, ensuring they had resources to study and reinforce their learning at home. My efforts in integrating technology into education not only fostered enhanced learning but also showcased my commitment to using technology as a tool to enrich and facilitate educational experiences.",
+        "While teaching English in Australia and Japan, I always looked for ways to enhance the learning experience for my students. I created a dedicated website using a Node.js application to provide students with comprehensive access to class materials, allowing them to study and reinforce their learning at home. My efforts in integrating technology into education not only fostered enhanced learning but also showcased my commitment to using technology as a tool to enrich educational experiences.",
     },
     {
       id: "tew-solutions",
@@ -64,7 +64,7 @@ export const experience: Experience = {
       endDate: "Jul 2015",
       address: "Gold Coast, QLD",
       description:
-        "In my role at TEW Solutions, I was at the forefront of integrating software solutions into our engineering projects. I actively contributed to programming the electrical systems, emphasising the development of PID controls. My software-oriented approach extended to data protection, where I championed the establishment of backup protocols for critical company data on private servers. Additionally, my experience with AutoCAD solidified my capability to design and implement tech-driven solutions, reinforcing my proficiency in both software development and systems design.",
+        "At TEW Solutions, I was at the forefront of integrating software solutions into our engineering projects. I actively contributed to programming the electrical systems, focusing on developing PID controls. My software-oriented approach extended to data protection, where I established backup protocols for critical company data on private servers. Additionally, my experience with AutoCAD solidified my capability to design and implement tech-driven solutions, reinforcing my proficiency in both software development and systems design.",
     },
   ],
 };

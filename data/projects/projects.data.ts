@@ -36,16 +36,16 @@ export const projects: Projects = {
           imgAlt: "Screenshot of the Yarn Petals website",
           title: "Yarn Petals GC",
           description:
-            "Yarn Petals GC is an innovative e-commerce platform designed to offer users customisation options when creating their yarn bouquets. This unique feature required a sophisticated database design to manage the variety of customizations effectively. The website is self-sufficient in updating stock upon purchases and provides a user-friendly interface to inform customers about stock levels. With its elegant and artistic styling, Yarn Petals GC stands out as my most visually creative project. Our mission at Yarn Petals is to craft timeless blooms that create lasting memories. We produce high-quality, eco-friendly, and allergy-friendly yarn bouquets, celebrating life's special moments through sustainable practices and meticulous craftsmanship. The platform stands as a testament to my ability to blend technical expertise with creative solutions to meet user needs.",
+            "Yarn Petals GC is an innovative e-commerce platform where you can customise your own yarn bouquets. I designed a sophisticated database to handle all the customisation options and ensure the website updates stock levels automatically. The user-friendly interface keeps customers informed about what's available. This project is my most visually creative work, blending technical skills with artistic flair. At Yarn Petals, we’re all about crafting beautiful, eco-friendly, and allergy-friendly yarn bouquets to celebrate life’s special moments.",
         },
         {
           id: "step-by-stepEnglish",
           url: "https://www.stepbystepenglishschool.com/",
           imgSrc: "/images/projects/step.png",
-          imgAlt: "Screenshot of the step-by-step english website",
+          imgAlt: "Screenshot of the Step-by-Step English website",
           title: "Step-By-Step English",
           description:
-            "'Step by Step English' represents my most ambitious project to date. It's a cutting-edge digital platform that merges traditional English teaching methodologies with advanced engineering techniques. Designed for learners across various proficiency levels, the application offers a plethora of interactive learning exercises and in-depth materials. Crafted using the Next.js framework, and bolstered with security features from clerk.dev and efficient data management via PlanetScale with Prisma ORM, , while the incorporation of TypeScript provides an additional layer of reliability through type safety. It stands as a testament to my dedication to redefining and enhancing the online English learning landscape.",
+            "'Step by Step English' is my most ambitious project so far. It’s a cutting-edge digital platform combining traditional English teaching methods with modern tech. Suitable for learners of all levels, it offers interactive exercises and detailed learning materials. Built using Next.js, it features robust security from clerk.dev and efficient data management with PlanetScale and Prisma ORM. The use of TypeScript ensures reliability through type safety. This project showcases my dedication to enhancing the online English learning experience.",
         },
         {
           id: "DrRacingKartAustralia",
@@ -54,7 +54,7 @@ export const projects: Projects = {
           imgAlt: "Screenshot of the DR Racing Kart Australia website",
           title: "DR Racing Kart Australia",
           description:
-            "For DR Racing Kart Australia, I crafted an online e-commerce website, showcasing a blend of aesthetic appeal and cutting-edge functionality. Built on the robust foundation of the Next.js framework, the site is designed for optimal user experience and seamless navigation. With Redux integrated for state management, it ensures efficient data handling and responsive site behavior, catering to the dynamic needs of an e-commerce platform. The use of Prisma as the ORM guarantees efficient and organised data interactions, while the incorporation of TypeScript provides an additional layer of reliability through type safety. This project not only stands as a testament to my technical prowess but also to my understanding of the nuances of creating a user-centric online shopping experience.",
+            "For DR Racing Kart Australia, I developed an e-commerce website that’s both visually appealing and highly functional. Built on the solid foundation of Next.js, the site offers an optimal user experience with seamless navigation. Using Redux for state management, it handles data efficiently and keeps the site responsive. Prisma ORM ensures organised data interactions, and TypeScript adds reliability. This project reflects my technical skills and my ability to create a user-centric online shopping experience.",
         },
         {
           id: "CMS",
@@ -63,7 +63,7 @@ export const projects: Projects = {
           imgAlt: "Screenshot of the CMS website",
           title: "Client Management System",
           description:
-            "At Chris Board Metal Roofing, I spearheaded the development of a dynamic Client Management System (CMS) tailored to streamline the company's operational flow. The heart of this CMS is a robust MongoDB database designed to meticulously track ongoing jobs, ensuring real-time updates and a centralized source of job-related information. ReactJS, complemented with Redux, was employed to craft the front-end of this application, enabling seamless data flow and interactive UI elements. The CMS also incorporated a sophisticated module to facilitate the generation of quotes and preparation of essential company documents with ease. This custom-built solution not only enhanced efficiency but also optimized workflows, reflecting my commitment to harnessing technology to address real-world challenges.",
+            "At Chris Board Metal Roofing, I led the development of a dynamic Client Management System (CMS) to streamline operations. The CMS features a robust MongoDB database that tracks ongoing jobs in real-time, providing a centralised source of job-related information. Using ReactJS and Redux, I crafted an interactive front-end for seamless data flow. The CMS also includes a module for generating quotes and preparing essential documents easily. This custom-built solution enhanced efficiency and optimised workflows, demonstrating my commitment to leveraging technology for real-world challenges.",
         },
         {
           id: "chrisBoardMetalRoofingWebsite",
@@ -72,7 +72,7 @@ export const projects: Projects = {
           imgAlt: "Screenshot of the Chris Board Metal Roofing 2022 website",
           title: "Chris Board Metal Roofing",
           description:
-            "For Chris Board Metal Roofing, I designed and developed a company website that perfectly encapsulated the brand's ethos while ensuring maximum online visibility. Built with a keen focus on SEO, the site was optimized to rank prominently in search results, drawing increased organic traffic and potential clientele. Utilizing Framer Motion, I infused the site with vibrant, attention-grabbing animations and effects, striking a balance between professional appeal and dynamic interactivity. The end product was not just a website, but a digital embodiment of the company's commitment to quality, distinction, and service, highlighting my aptitude for creating web experiences that resonate and engage.",
+            "I designed and developed the Chris Board Metal Roofing website to perfectly capture the brand’s ethos and ensure maximum online visibility. With a focus on SEO, the site ranks prominently in search results, attracting more organic traffic. Using Framer Motion, I added vibrant animations and effects to balance professional appeal with dynamic interactivity. This project is a digital embodiment of the company’s commitment to quality and service, showcasing my ability to create engaging web experiences.",
         },
       ],
     },

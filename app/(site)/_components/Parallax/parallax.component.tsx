@@ -62,6 +62,7 @@ export function Parallax() {
             alt="image"
             fill={true}
             className="object-cover rounded-xl"
+            priority
           />
         </motion.div>
       ))}

@@ -7,7 +7,6 @@ import { Inter } from "next/font/google";
 
 import { cn } from "@/utils/ui";
 
-import { Glass } from "./_components/glass";
 import { SiteNav } from "./(site)/_components/site-nav";
 
 const inter = Inter({ subsets: ["latin"] });
