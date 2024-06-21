@@ -35,13 +35,14 @@ export const about: About = {
   title: "About Me",
   subtitle: "Crafting Software Solutions: A Lifelong Pursuit.",
   content: `
-My passion for front-end engineering is deeply rooted in my love for **communication**. Through my experiences as an English teacher, I've learned to convey complex ideas with minimal language, a skill that translates seamlessly into creating intuitive user experiences. I believe in the power of **engineering** to solve real-world problems using logic and creativity. <br /><br />
+My passion for front-end engineering is deeply rooted in my love for **communication**. Through my experiences as an English teacher, I've learned to convey complex ideas with minimal language, a skill that translates seamlessly into creating intuitive user experiences. I believe in the power of **engineering** to solve real-world problems using **logic** and **creativity**. <br /><br />
 
-I thrive on analysing available tools and brainstorming various approaches to achieve the best results. The dynamic nature of front-end development excites me, as there are always multiple ways to accomplish a task, and I enjoy finding the most efficient and elegant solutions. <br /><br />
+I thrive on analysing available tools and brainstorming various approaches to achieve the best results. The dynamic nature of front-end development excites me, as there are always multiple ways to accomplish a task, and I enjoy finding the most **efficient** and **elegant** solutions. <br /><br />
 
-I have always loved creating **engaging experiences** that users can intuitively interact with. My diverse background, which includes roles in engineering and teaching, has equipped me with a unique blend of **technical aptitude and effective communication**. This combination allows me to craft solutions that are not only technically sound but also user-friendly and impactful. <br /><br />
+I have always loved creating **engaging experiences** that users can intuitively interact with. My diverse background, which includes roles in engineering and teaching, has equipped me with a unique blend of **technical aptitude** and **effective communication**. This combination allows me to craft solutions that are not only technically sound but also **user-friendly** and **impactful**. <br /><br />
 
-In the dynamic field of software engineering, I'm eager to **collaborate, innovate, and make a difference**. Here's to the journey ahead! <br /><br />
+With experience in **cloud computing** and **AWS**, I ensure that my applications are **scalable** and **reliable**. In the dynamic field of software engineering, I'm eager to **collaborate, innovate, and make a difference**. Here's to the journey ahead! <br /><br />
+
 
   `,
 };
