@@ -15,14 +15,14 @@ export const ExperiencePage: React.FC = () => {
   });
 
   return (
-    <section id="experience" className=" relative z-20">
+    <div className=" relative z-20">
       <div className="relative mx-auto flex flex-col lg:flex-row gap-10 ">
         <div ref={ref} className="relative w-full">
           <motion.div
             style={{ scaleY: scrollYProgress }}
             className="absolute top-0 w-[3px] h-full bg-main-8 origin-top left-[10px]"
           />
-          <ul className="flex flex-col items-start justify-between gap-10 w-full isolate z-30 relative">
+          <ul className="flex flex-col items-start justify-between gap-10 w-full isolate z-30">
             {experience.items.map((item) => (
               <Details
                 key={item.id}
@@ -37,7 +37,7 @@ export const ExperiencePage: React.FC = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 interface DetailsProps {
@@ -62,7 +62,7 @@ const Details: React.FC<DetailsProps> = ({
   return (
     <li
       ref={ref}
-      className="mx-auto flex flex-col justify-between w-[90%] md:flex-row relative"
+      className="mx-auto flex flex-col justify-between w-[90%] md:flex-row"
     >
       <Link
         href={companyLink}
