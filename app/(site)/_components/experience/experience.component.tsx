@@ -22,7 +22,7 @@ export const ExperiencePage: React.FC = () => {
             style={{ scaleY: scrollYProgress }}
             className="absolute top-0 w-[3px] h-full bg-main-8 origin-top left-[10px]"
           />
-          <ul className="flex flex-col items-start justify-between gap-10 w-full isolate z-30">
+          <ul className="flex flex-col items-start justify-between gap-10 w-full isolate z-30 overflow-hidden">
             {experience.items.map((item) => (
               <Details
                 key={item.id}
@@ -40,6 +40,7 @@ export const ExperiencePage: React.FC = () => {
     </div>
   );
 };
+
 interface DetailsProps {
   position: string;
   company: string;

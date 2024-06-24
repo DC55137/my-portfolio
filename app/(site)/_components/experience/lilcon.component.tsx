@@ -4,7 +4,7 @@ import React, { RefObject, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 interface LiIconProps {
-  reference: RefObject<HTMLElement>;
+  reference: RefObject<HTMLLIElement>;
 }
 
 const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
@@ -14,14 +14,6 @@ const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
   });
 
   const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1]);
-
-  useEffect(() => {
-    const unsubscribe = scrollYProgress.on("change", (latest) => {
-      console.log("LiIcon scrollYProgress:", latest);
-    });
-
-    return () => unsubscribe();
-  }, [scrollYProgress]);
 
   return (
     <figure className="absolute -left-[18px] stroke-main-11">
