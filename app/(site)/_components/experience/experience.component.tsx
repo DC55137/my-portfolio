@@ -58,7 +58,7 @@ const Details: React.FC<DetailsProps> = ({
   address,
   work,
 }) => {
-  const ref = useRef<HTMLLIElement>(null);
+  const ref = useRef(null);
 
   return (
     <li
