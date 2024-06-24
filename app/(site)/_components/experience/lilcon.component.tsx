@@ -4,7 +4,7 @@ import React, { RefObject, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 interface LiIconProps {
-  reference: RefObject<HTMLLIElement>;
+  reference: RefObject<HTMLElement>;
 }
 
 const LiIcon: React.FC<LiIconProps> = ({ reference }) => {

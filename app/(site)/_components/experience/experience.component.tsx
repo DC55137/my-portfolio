@@ -40,7 +40,6 @@ export const ExperiencePage: React.FC = () => {
     </section>
   );
 };
-
 interface DetailsProps {
   position: string;
   company: string;
@@ -96,3 +95,5 @@ const Details: React.FC<DetailsProps> = ({
     </li>
   );
 };
+
+export default Details;
