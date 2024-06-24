@@ -43,7 +43,7 @@ const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
           r="20"
           className="stroke-[5px] fill-black"
           style={{
-            pathLength: scrollYProgress,
+            pathLength: pathLength,
           }}
         />
         <circle
