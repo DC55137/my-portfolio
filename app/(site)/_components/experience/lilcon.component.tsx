@@ -1,7 +1,7 @@
 "use client";
 
 import React, { RefObject, useEffect } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 interface LiIconProps {
   reference: RefObject<HTMLElement>;
@@ -10,13 +10,17 @@ interface LiIconProps {
 const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
   const { scrollYProgress } = useScroll({
     target: reference,
-    offset: ["start center", "center center"],
+    offset: ["start center", "end center"],
   });
 
+  const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1]);
+
   useEffect(() => {
-    scrollYProgress.on("change", (latest) => {
-      console.log("ExperiencePage scrollYProgress:", latest);
+    const unsubscribe = scrollYProgress.on("change", (latest) => {
+      console.log("LiIcon scrollYProgress:", latest);
     });
+
+    return () => unsubscribe();
   }, [scrollYProgress]);
 
   return (
