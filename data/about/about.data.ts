@@ -43,6 +43,5 @@ I have always loved creating **engaging experiences** that users can intuitively
 
 With experience in **cloud computing** and **AWS**, I ensure that my applications are **scalable** and **reliable**. In the dynamic field of software engineering, I'm eager to **collaborate, innovate, and make a difference**. Here's to the journey ahead! <br /><br />
 
-
   `,
 };

@@ -73,9 +73,9 @@ const Details: React.FC<DetailsProps> = ({
       >
         <LiIcon reference={ref} />
         <motion.div
-          initial={{ y: 50 }}
-          whileInView={{ y: 0 }}
-          transition={{ duration: 0.5, type: "spring" }}
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, type: "spring", delay: 0.2 }}
           viewport={{ once: true, amount: 0.5 }}
           className="flex flex-col pl-4 md:flex-row items-center md:items-start"
         >
