@@ -10,7 +10,7 @@ interface LiIconProps {
 const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
   const { scrollYProgress } = useScroll({
     target: reference,
-    offset: ["start center", "end center"],
+    offset: ["start center", "center center"],
   });
 
   const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1]);

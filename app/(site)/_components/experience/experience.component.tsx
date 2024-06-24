@@ -62,7 +62,7 @@ const Details: React.FC<DetailsProps> = ({
   return (
     <li
       ref={ref}
-      className="mx-auto flex flex-col justify-between w-[90%] md:flex-row"
+      className="mx-auto flex flex-col justify-between w-[90%] md:flex-row relative"
     >
       <Link
         href={companyLink}
