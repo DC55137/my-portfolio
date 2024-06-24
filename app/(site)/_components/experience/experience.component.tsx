@@ -62,6 +62,7 @@ const Details: React.FC<DetailsProps> = ({
 
   return (
     <li
+      id={`${company}-${position}`} // Add a unique id for logging
       ref={ref}
       className="mx-auto flex flex-col justify-between w-[90%] md:flex-row"
     >

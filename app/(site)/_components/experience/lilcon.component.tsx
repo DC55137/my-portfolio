@@ -12,6 +12,16 @@ const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
     target: reference,
     offset: ["start center", "center center"],
   });
+  useEffect(() => {
+    const unsubscribe = scrollYProgress.onChange((latest) => {
+      console.log(
+        `LiIcon scrollYProgress for ${reference.current?.id}:`,
+        latest
+      );
+    });
+
+    return () => unsubscribe();
+  }, [scrollYProgress, reference]);
 
   const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1]);
 

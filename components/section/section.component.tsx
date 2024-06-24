@@ -21,7 +21,7 @@ export function Section({
   return (
     <section
       className={cn(
-        "scroll-mt-[120px] md:scroll-mt-10 flex flex-col gap-7",
+        "scroll-mt-[120px] md:scroll-mt-10 flex flex-col gap-7 ",
         className
       )}
       {...props}
