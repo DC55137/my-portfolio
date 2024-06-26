@@ -3,12 +3,11 @@
 @tailwind utilities;
 
 .backdrop-blur-custom {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* Fallback for no backdrop-filter support */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+.backdrop-blur-large-custom {
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
 }

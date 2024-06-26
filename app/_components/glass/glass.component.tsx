@@ -29,7 +29,7 @@ export function Glass() {
         ref={spotlightRef}
         className="hidden lg:block absolute rounded-full w-[100px] aspect-square bg-main-8"
       />
-      <div className="absolute inset-0 bg-base-1/50 backdrop-blur-[100px] backdrop-saturate-200" />
+      <div className="absolute inset-0 bg-base-1/50 backdrop-blur-large-custom backdrop-saturate-200" />
     </div>
   );
 }
