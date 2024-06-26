@@ -1,22 +1,19 @@
 "use client";
 
-import React, { RefObject, useEffect } from "react";
+import React, { RefObject, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-interface LiIconProps {
-  reference: RefObject<HTMLLIElement>;
-}
-
-const LiIcon: React.FC<LiIconProps> = ({ reference }) => {
+const LiIcon: React.FC = () => {
+  const reference = useRef<HTMLLIElement>(null);
   const { scrollYProgress } = useScroll({
     target: reference,
-    offset: ["start center", "center center"],
+    offset: ["start center", "end center"],
   });
 
   const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <figure className="absolute -left-[18px] stroke-main-11">
+    <figure ref={reference} className="absolute -left-[18px] stroke-main-11">
       <svg
         className="-rotate-90 w-[60px] h-[60px]"
         width="75"

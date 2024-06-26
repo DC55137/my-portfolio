@@ -58,12 +58,9 @@ const Details: React.FC<DetailsProps> = ({
   address,
   work,
 }) => {
-  const ref = useRef<HTMLLIElement>(null);
-
   return (
     <li
       id={`${company}-${position}`} // Add a unique id for logging
-      ref={ref}
       className="mx-auto flex flex-col justify-between w-[90%] md:flex-row"
     >
       <Link
@@ -72,7 +69,7 @@ const Details: React.FC<DetailsProps> = ({
         rel="noopener noreferrer"
         className="group flex gap-5 lg:group-hover/list:opacity-50 lg:hover:!opacity-100 lg:transition-opacity"
       >
-        <LiIcon reference={ref} />
+        <LiIcon />
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
