@@ -70,7 +70,7 @@ export function Nav({
         ref={navRef}
         shape="rounded"
         className={cn(
-          "sticky top-0 sm:h-[100dvh] border-x-0 border-t-0 sm:border-b-0 sm:border-r backdrop-blur-lg flex flex-col sm:items-center p-4",
+          "sticky top-0 sm:h-[100dvh] border-x-0 border-t-0 sm:border-b-0 sm:border-r backdrop-blur flex flex-col sm:items-center p-4",
           isCentered ? "justify-between" : "gap-6",
           isExpanded && "fixed sm:sticky inset-0 h-[100dvh] bg-main-4/40",
           className
