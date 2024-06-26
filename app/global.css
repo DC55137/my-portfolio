@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.backdrop-blur-custom {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Fallback for no backdrop-filter support */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
