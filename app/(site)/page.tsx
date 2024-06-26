@@ -71,6 +71,7 @@ export default function SiteHome() {
               id={projects.id}
               title={projects.title}
               subtitle={projects.subtitle}
+              className="overflow-hidden"
             >
               {projects.groups.map((group) => (
                 <div key={group.id} className="flex flex-col gap-6">
