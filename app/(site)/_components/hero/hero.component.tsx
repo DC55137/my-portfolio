@@ -25,6 +25,7 @@ export function Hero() {
   const opacityText = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
   const opacityIcons = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
   const opacityDesk = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
+  const rotateIcons = useTransform(scrollYProgress, [0, 1], [0, 1800]);
 
   const opacityMainSection = useTransform(scrollYProgress, [0.5, 1], [1, 0]);
 
@@ -99,14 +100,18 @@ export function Hero() {
             src="/desk.png"
             alt="Foreground Image"
             fill={true}
-            className="object-cover object-bottom floating"
+            className="object-cover object-bottom floatingDesk"
             priority
             onLoad={handleImageLoad}
           />
         </motion.div>
 
         <motion.div
-          style={{ scale: scaleForeground, opacity: opacityIcons }}
+          style={{
+            scale: scaleForeground,
+            opacity: opacityIcons,
+            rotate: rotateIcons,
+          }}
           className="absolute w-full h-full "
         >
           <Image
