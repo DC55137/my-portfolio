@@ -23,15 +23,26 @@ export const experience: Experience = {
   subtitle: "The landmarks of my coding career, one role at a time.",
   items: [
     {
-      id: "freelancer",
-      url: "https://www.danielcorrea.website",
-      position: "Freelancer",
-      company: "Self-Employed",
+      id: "step-by-step-english",
+      url: "https://www.stepbystepenglish.com",
+      position: "Full Stack Engineer",
+      company: "Step by Step English",
       startDate: "Mar 2024",
-      endDate: "Current",
+      endDate: "Jun 2024",
       address: "Gold Coast, QLD",
       description:
-        "Since March 2024, I've been working as a freelancer, creating innovative projects like Step By Step English and Yarn Petals. As a freelancer, I use advanced technologies like Next.js, Prisma, and PlanetScale to develop robust and scalable applications. My work on Step By Step English involved building a top-notch online teaching platform with interactive exercises and comprehensive learning materials. For Yarn Petals, I designed a unique e-commerce platform with extensive customisation options for yarn bouquets, blending technical expertise with artistic creativity.",
+        "At Step by Step English, I played a pivotal role as a Full Stack Engineer. I was responsible for designing the website using Figma and developing the application with Next.js and TailwindCSS. I implemented a Neon.js Postgres database for the backend, leveraging Prisma as the ORM to streamline database operations. Zustand was utilised for efficient state management. This online English learning platform provides interactive and engaging lessons, enabling students to complete courses online and schedule sessions with certified teachers.",
+    },
+    {
+      id: "yarn-petals",
+      url: "https://www.yarnpetals.com",
+      position: "Front End Engineer",
+      company: "Yarn Petals",
+      startDate: "Jan 2024",
+      endDate: "Mar 2024",
+      address: "Gold Coast, QLD",
+      description:
+        "As a Front End Engineer at Yarn Petals, I developed an interactive e-commerce website that allows users to customise bouquets by mixing and matching various animals and flowers. The platform was built with Next.js for the framework, Prisma for the ORM, and Neon Postgres for the database. Zustand was used for state management. The application focuses on providing a seamless and enjoyable user experience, ensuring customers can create personalised and unique gifts. My work emphasised front-end technologies, user interface design, and interactive web development.",
     },
     {
       id: "chris-board-metal-roofing",
@@ -39,10 +50,10 @@ export const experience: Experience = {
       position: "Engineer and Operations Coordinator",
       company: "Chris Board Metal Roofing",
       startDate: "Oct 2020",
-      endDate: "Mar 2024",
+      endDate: "Jan 2024",
       address: "Gold Coast, QLD",
       description:
-        "At Chris Board Metal Roofing, I led a transformation in our client management processes. I designed and built a comprehensive React application for client management, starting with the MERN Stack and later transitioning to a Next.js framework. I also took charge of constructing the company's website, focusing on SEO optimisation to boost online visibility. My efforts included media advertisement, ensuring a strong and effective digital presence for the company.",
+        "At Chris Board Metal Roofing, I led a significant transformation in client management processes. I designed and built a comprehensive React application for client management, initially using the MERN Stack and later transitioning to a Next.js framework for improved performance and scalability. I also constructed the company's website with a strong focus on SEO optimisation to enhance online visibility. My role included managing media advertisements to ensure a robust and effective digital presence.",
     },
     {
       id: "imagine-education",
@@ -53,7 +64,7 @@ export const experience: Experience = {
       endDate: "Jun 2020",
       address: "Southport, QLD & Hiroshima, Japan",
       description:
-        "While teaching English in Australia and Japan, I always looked for ways to enhance the learning experience for my students. I created a dedicated website using a Node.js application to provide students with comprehensive access to class materials, allowing them to study and reinforce their learning at home. My efforts in integrating technology into education not only fostered enhanced learning but also showcased my commitment to using technology as a tool to enrich educational experiences.",
+        "While teaching English in Australia and Japan, I sought innovative ways to enhance the learning experience for my students. I created a dedicated website using a Node.js application to provide students with comprehensive access to class materials, allowing them to study and reinforce their learning at home. My efforts in integrating technology into education not only fostered enhanced learning but also showcased my commitment to using technology as a tool to enrich educational experiences.",
     },
     {
       id: "tew-solutions",
