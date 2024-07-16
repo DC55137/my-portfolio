@@ -30,6 +30,15 @@ export const projects: Projects = {
       title: "Featured Work Projects",
       items: [
         {
+          id: "step-by-stepEnglish",
+          url: "https://www.sbsenglish.com/",
+          imgSrc: "/images/projects/step.png",
+          imgAlt: "Screenshot of the Step-by-Step English website",
+          title: "Step-By-Step English",
+          description:
+            "'Step by Step English' is my most ambitious project so far. It’s a cutting-edge digital platform combining traditional English teaching methods with modern tech. Suitable for learners of all levels, it offers interactive exercises and detailed learning materials. Built using Next.js, it features robust security from clerk.dev and efficient data management with PlanetScale and Prisma ORM. The use of TypeScript ensures reliability through type safety. This project showcases my dedication to enhancing the online English learning experience.",
+        },
+        {
           id: "YarnPetalsGC",
           url: "https://www.yarnpetalsgc.com/",
           imgSrc: "/images/projects/yarnpetalsgc.png",
@@ -37,15 +46,6 @@ export const projects: Projects = {
           title: "Yarn Petals GC",
           description:
             "Yarn Petals GC is an innovative e-commerce platform where you can customise your own yarn bouquets. I designed a sophisticated database to handle all the customisation options and ensure the website updates stock levels automatically. The user-friendly interface keeps customers informed about what's available. This project is my most visually creative work, blending technical skills with artistic flair. At Yarn Petals, we’re all about crafting beautiful, eco-friendly, and allergy-friendly yarn bouquets to celebrate life’s special moments.",
-        },
-        {
-          id: "step-by-stepEnglish",
-          url: "https://www.stepbystepenglishschool.com/",
-          imgSrc: "/images/projects/step.png",
-          imgAlt: "Screenshot of the Step-by-Step English website",
-          title: "Step-By-Step English",
-          description:
-            "'Step by Step English' is my most ambitious project so far. It’s a cutting-edge digital platform combining traditional English teaching methods with modern tech. Suitable for learners of all levels, it offers interactive exercises and detailed learning materials. Built using Next.js, it features robust security from clerk.dev and efficient data management with PlanetScale and Prisma ORM. The use of TypeScript ensures reliability through type safety. This project showcases my dedication to enhancing the online English learning experience.",
         },
         {
           id: "DrRacingKartAustralia",

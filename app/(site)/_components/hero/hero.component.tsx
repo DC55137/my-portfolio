@@ -25,7 +25,6 @@ export function Hero() {
   const opacityText = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
   const opacityIcons = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
   const opacityDesk = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
-  const rotateIcons = useTransform(scrollYProgress, [0, 1], [0, 1800]);
 
   const opacityMainSection = useTransform(scrollYProgress, [0.5, 1], [1, 0]);
 
@@ -110,7 +109,6 @@ export function Hero() {
           style={{
             scale: scaleForeground,
             opacity: opacityIcons,
-            rotate: rotateIcons,
           }}
           className="absolute w-full h-full "
         >
