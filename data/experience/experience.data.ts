@@ -23,26 +23,15 @@ export const experience: Experience = {
   subtitle: "The landmarks of my coding career, one role at a time.",
   items: [
     {
-      id: "step-by-step-english",
-      url: "https://www.stepbystepenglish.com",
-      position: "Full Stack Engineer",
-      company: "Step by Step English",
-      startDate: "Mar 2024",
-      endDate: "Jun 2024",
-      address: "Gold Coast, QLD",
-      description:
-        "At Step by Step English, I played a pivotal role as a Full Stack Engineer. I was responsible for designing the website using Figma and developing the application with Next.js and TailwindCSS. I implemented a Neon.js Postgres database for the backend, leveraging Prisma as the ORM to streamline database operations. Zustand was utilised for efficient state management. This online English learning platform provides interactive and engaging lessons, enabling students to complete courses online and schedule sessions with certified teachers.",
-    },
-    {
-      id: "yarn-petals",
-      url: "https://www.yarnpetals.com",
-      position: "Front End Engineer",
-      company: "Yarn Petals",
+      id: "next-digital-development",
+      url: "https://nextdigitaldev.com.au",
+      position: "Founder & Lead Developer",
+      company: "Next Digital Development",
       startDate: "Jan 2024",
-      endDate: "Mar 2024",
+      endDate: "Present",
       address: "Gold Coast, QLD",
       description:
-        "As a Front End Engineer at Yarn Petals, I developed an interactive e-commerce website that allows users to customise bouquets by mixing and matching various animals and flowers. The platform was built with Next.js for the framework, Prisma for the ORM, and Neon Postgres for the database. Zustand was used for state management. The application focuses on providing a seamless and enjoyable user experience, ensuring customers can create personalised and unique gifts. My work emphasised front-end technologies, user interface design, and interactive web development.",
+        "As the founder of Next Digital Development, I provide end-to-end digital solutions for businesses across various industries. I specialize in building high-performance websites with Next.js, focusing on web development, e-commerce platforms, SEO optimization, branding, and digital marketing. Notable projects include TN Lashes & Beauty, Hilltop Estate, Hope Island Beauty & Medispa, Yarn Petals GC, and DR Racing Kart Australia. My work emphasizes responsive design, seamless user experiences, and strategic SEO to drive measurable results for clients.",
     },
     {
       id: "chris-board-metal-roofing",

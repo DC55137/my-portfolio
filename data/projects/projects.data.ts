@@ -1,5 +1,4 @@
 import type { Section } from "../data.props";
-
 import { IconBriefcase } from "@tabler/icons-react";
 
 type Projects = Section & {
@@ -23,56 +22,74 @@ export const projects: Projects = {
   icon: IconBriefcase,
   label: "Projects",
   title: "From Ideas to Reality",
-  subtitle: "A spectrum of projects: Some solo, some shared, all special.",
+  subtitle: "Client success stories, crafted with precision and passion.",
   groups: [
     {
       id: "work",
       title: "Featured Work Projects",
       items: [
         {
-          id: "step-by-stepEnglish",
-          url: "https://www.sbsenglish.com/",
-          imgSrc: "/images/projects/step.png",
-          imgAlt: "Screenshot of the Step-by-Step English website",
-          title: "Step-By-Step English",
+          id: "next-digital-development",
+          url: "https://nextdigitaldev.com.au",
+          imgSrc: "/images/projects/nextdigitaldev.png",
+          imgAlt: "Screenshot of the Next Digital Development website",
+          title: "Next Digital Development",
           description:
-            "'Step by Step English' is my most ambitious project so far. It’s a cutting-edge digital platform combining traditional English teaching methods with modern tech. Suitable for learners of all levels, it offers interactive exercises and detailed learning materials. Built using Next.js, it features robust security from clerk.dev and efficient data management with PlanetScale and Prisma ORM. The use of TypeScript ensures reliability through type safety. This project showcases my dedication to enhancing the online English learning experience.",
+            "The official website for my digital agency, showcasing our commitment to high-performance web development, SEO optimization, branding, and e-commerce solutions. Built with Next.js, TypeScript, and Framer Motion, the site highlights modern design practices, Core Web Vitals optimization, and AI-driven workflows to deliver outstanding results for clients.",
         },
         {
-          id: "YarnPetalsGC",
-          url: "https://www.yarnpetalsgc.com/",
+          id: "tn-lashes-beauty",
+          url: "https://tnlashesbeauty.com.au",
+          imgSrc: "/images/projects/tnlashesbeauty.png",
+          imgAlt: "Screenshot of the TN Lashes & Beauty website",
+          title: "TN Lashes & Beauty",
+          description:
+            "End-to-end branding and custom web application for a premium beauty salon in Gold Coast. Features a sleek booking system, Stripe payment integration, and responsive design built with Next.js. This project highlights my ability to blend elegant design with powerful functionality.",
+        },
+        {
+          id: "hilltop-estate",
+          url: "https://hilltopestate.com.au",
+          imgSrc: "/images/projects/hilltopestate.png",
+          imgAlt: "Screenshot of the Hilltop Estate website",
+          title: "Hilltop Estate",
+          description:
+            "Branding and website design for a luxury wedding venue in Mt Tamborine. Built with Next.js and Framer Motion for a premium, immersive experience. Features a custom booking system tailored for high-end wedding inquiries and events.",
+        },
+        {
+          id: "hope-island-beauty-medispa",
+          url: "https://hopeislandbeautymedispa.com.au",
+          imgSrc: "/images/projects/hopeislandbeautymedispa.png",
+          imgAlt: "Screenshot of the Hope Island Beauty & Medispa website",
+          title: "Hope Island Beauty & Medispa",
+          description:
+            "Complete brand identity refresh and website development for a luxury day spa. Designed for maximum SEO performance, online bookings, and an elegant client experience. Built with Next.js and integrated custom marketing assets.",
+        },
+        {
+          id: "yarn-petals-gc",
+          url: "https://www.yarnpetalsgc.com",
           imgSrc: "/images/projects/yarnpetalsgc.png",
-          imgAlt: "Screenshot of the Yarn Petals website",
+          imgAlt: "Screenshot of the Yarn Petals GC website",
           title: "Yarn Petals GC",
           description:
-            "Yarn Petals GC is an innovative e-commerce platform where you can customise your own yarn bouquets. I designed a sophisticated database to handle all the customisation options and ensure the website updates stock levels automatically. The user-friendly interface keeps customers informed about what's available. This project is my most visually creative work, blending technical skills with artistic flair. At Yarn Petals, we’re all about crafting beautiful, eco-friendly, and allergy-friendly yarn bouquets to celebrate life’s special moments.",
+            "Custom e-commerce platform for a boutique yarn flower shop. Built with Next.js, Prisma ORM, and Stripe integration. Features dynamic product filtering, inventory management, and a fully responsive shopping experience.",
         },
         {
-          id: "DrRacingKartAustralia",
-          url: "https://www.drracingkart.com.au/",
+          id: "dr-racing-kart-australia",
+          url: "https://www.drracingkart.com.au",
           imgSrc: "/images/projects/drracingkartaustralia.png",
           imgAlt: "Screenshot of the DR Racing Kart Australia website",
           title: "DR Racing Kart Australia",
           description:
-            "For DR Racing Kart Australia, I developed an e-commerce website that’s both visually appealing and highly functional. Built on the solid foundation of Next.js, the site offers an optimal user experience with seamless navigation. Using Redux for state management, it handles data efficiently and keeps the site responsive. Prisma ORM ensures organised data interactions, and TypeScript adds reliability. This project reflects my technical skills and my ability to create a user-centric online shopping experience.",
+            "Full website redesign and SEO strategy for Australia's premier kart racing equipment provider. Built with Next.js and optimized for high search rankings and fast performance. E-commerce enabled with Stripe integration.",
         },
         {
-          id: "CMS",
-          url: "https://www.cbroofing.com.au/",
-          imgSrc: "/images/projects/cms.png",
-          imgAlt: "Screenshot of the CMS website",
-          title: "Client Management System",
-          description:
-            "At Chris Board Metal Roofing, I led the development of a dynamic Client Management System (CMS) to streamline operations. The CMS features a robust MongoDB database that tracks ongoing jobs in real-time, providing a centralised source of job-related information. Using ReactJS and Redux, I crafted an interactive front-end for seamless data flow. The CMS also includes a module for generating quotes and preparing essential documents easily. This custom-built solution enhanced efficiency and optimised workflows, demonstrating my commitment to leveraging technology for real-world challenges.",
-        },
-        {
-          id: "chrisBoardMetalRoofingWebsite",
-          url: "https://www.cbroofing.com.au/",
-          imgSrc: "/images/projects/ChrisBoardMetalRoofing.png",
-          imgAlt: "Screenshot of the Chris Board Metal Roofing 2022 website",
+          id: "chris-board-metal-roofing",
+          url: "https://www.cbroofing.com.au",
+          imgSrc: "/images/projects/chrisboardmetalroofing.png",
+          imgAlt: "Screenshot of the Chris Board Metal Roofing website",
           title: "Chris Board Metal Roofing",
           description:
-            "I designed and developed the Chris Board Metal Roofing website to perfectly capture the brand’s ethos and ensure maximum online visibility. With a focus on SEO, the site ranks prominently in search results, attracting more organic traffic. Using Framer Motion, I added vibrant animations and effects to balance professional appeal with dynamic interactivity. This project is a digital embodiment of the company’s commitment to quality and service, showcasing my ability to create engaging web experiences.",
+            "SEO-optimized website and client management system for a local roofing company. Increased organic traffic by 150% and doubled monthly lead generation. Built with Next.js and Framer Motion for a modern, dynamic user experience.",
         },
       ],
     },
